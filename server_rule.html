@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy Roleplay Gurkha</title>
+ <style>
+    /* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: url('/img/background.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh; /* Ensure full page coverage */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    background: gold;
+    color: black;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: gold;
+    margin: 10px 0;
+}
+
+.header h3 {
+    font-size: 32px;
+    color: gold;
+    margin: 10px 0;
+}
+
+/* About Section Styles - Adjusted to 80% width and Left Aligning Text */
+.about-section {
+    text-align: left; /* Align text to the left */
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%; /* Set the box width to 80% */
+    max-width: 1100px; /* Max width to ensure responsiveness */
+    background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slight shadow for visibility */
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: cyan;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.about-content span {
+    font-style: italic;
+    color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-section {
+        width: 90%; /* Make box slightly smaller on mobile */
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .about-section h2 {
+        font-size: 22px;
+    }
+}
+
+ </style>
+
+ 
+  <!-- <style>
+    /* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: url('/img/background.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh; /* Ensure full page coverage */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    background: gold;
+    color: black;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: gold;
+    margin: 10px 0;
+}
+
+.header h3 {
+    font-size: 32px;
+    color: gold;
+    margin: 10px 0;
+}
+
+/* About Section Styles - Adjusted to 80% width */
+.about-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%; /* Set the box width to 80% */
+    max-width: 1100px; /* Max width to ensure responsiveness */
+    background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slight shadow for visibility */
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: cyan;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.about-content span {
+    font-style: italic;
+    color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-section {
+        width: 90%; /* Make box slightly smaller on mobile */
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .about-section h2 {
+        font-size: 22px;
+    }
+}
+
+  </style> -->
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="/index.html" >Home</a></li>
+      <li><a href="/server_rule.html" class="active">Server Rules</a></li>
+      <li><a href="/prio.html">Priority Details</a></li>
+    </ul>
+  </div>
+
+  <!-- rules Section -->
+  <div class="about-section">
+    <header>
+        <h1>Legacy Roleplay Gurkha - Official Rules</h1>
+    </header>
+    <div class="container">
+        <h2>1. Community Rules</h2>
+        <p>Legacy Roleplay Gurkha usually consists of adults or people over the age of 18+, but that doesn't mean you have to disclose your age to play. We respect and recognize young people who come to play on this server and will not tolerate any discrimination or intimidation.</p>
+        <p><strong>UNBAN is rarely done for the crimes described below:</strong></p>
+        <ul>
+            <li>(1.1) Harassment or targeting of any individual is punishable by a permanent ban without appeal.</li>
+            <li>(1.2) Permanent BAN is imposed without any opportunity to appeal against discrimination, racism, or sexuality. Racist slander is not welcomed regardless of the context in which you speak. Rape role-play or obscene language/activities are not tolerated.</li>
+            <li>(1.3) Any kind of swearing or cursing is not allowed on our server anymore. You can use in-game cursing words that NPCs use, but still, we don't prefer it. Our community has people who are under 18 also.</li>
+            <li>(1.4) Any threat to the community or any individual shall be taken very seriously. They will be issued a permanent ban without the opportunity to appeal. In the context of threats, we will gladly assist the police in any interrogation.</li>
+            <li>(1.5) The Staff Team reserves the right to ban (BAN) from our servers at any time if it is found to be a breach of any person or if we believe there is good reason to believe that they are causing a breach here.</li>
+            <li>(1.6) In Roleplay, each situation is different, and it is difficult to detail everything here. Just keep in mind that this is an adult community and some things come down to using common sense.</li>
+            <li>(1.7) Encouraging or forcing other members of the community to break the rules is strictly prohibited and will be punished by Permanent BAN without a chance to appeal.</li>
+            <li>(1.8) You are not permitted to provide false information if any staff asks you any personal questions such as your age while applying for a position/job on our server. Remember that you are never asked to provide your full name, address, or any personal information.</li>
+        </ul>
+
+        <h2>2. General Rules</h2>
+    <ul>
+        <li>(2.1.1) Vehicle Death Match (also known as VDM) is strictly prohibited. In Legacy Role-play, VDM is defined as the intentional use or attempt of a vehicle to kill or injure another person.</li>
+        <li>(2.1.2) Any act in which a person uses their vehicle as a weapon to protect their life from a direct or immediate threat shall not be considered VDM. A direct or immediate threat is defined as someone actively trying to harm you at the moment. However, if someone tries to kill you and then flees the scene, they will no longer be considered a direct threat to your life.</li>
+        <li>(2.2) Random Death Match (also known as RDM) is the act of killing or downing someone without Quality Role-play. Quality Role-play requires a proper backstory before taking someone's life. For example, during a robbery, you must give the victim adequate time to obey your commands, such as after gunpoint.</li>
+        <li>(2.3) Fear RP is mandatory. You must act realistically in life-threatening situations, such as following commands when a gun is aimed at you to ensure survival.</li>
+        <li>(2.4) Changing the functionality of the game or altering the systems/scripts (modding or scripting) is strictly prohibited and results in a permanent ban.</li>
+        <li>(2.5) Exploiting in-game bugs or glitches is prohibited. Report bugs or glitches to staff immediately. Examples include:
+            <ul>
+                <li>(2.5.1) Using glitches to repair or recover vehicles.</li>
+                <li>(2.5.2) Transferring cash between your own characters.</li>
+            </ul>
+        </li>
+        <li>(2.6) Disconnecting during Roleplay situations, known as Combat Logging, is prohibited. Examples include disconnecting during a fight, police chase, or arrest. Staff will investigate crash claims and make decisions accordingly.</li>
+        <li>(2.7) Trolling, such as disrupting others' Roleplay, using soundboards or voice changers without permission, or provoking reactions, is prohibited. Severe violations can lead to a permanent ban without appeal.</li>
+        <li>(2.8) Real-life transactions for in-game items or currency are strictly prohibited. Donations for server maintenance are exempt.</li>
+        <li>(2.9) Actions like messaging, looting, or taking whitelisted job members hostage will result in appropriate actions.</li>
+        <li>(2.10) BAN evasion is prohibited. Using alternative accounts to bypass a ban is not allowed.</li>
+        <li>(2.11) Advertising other servers, communities, products, or services is strictly prohibited and will result in a ban through Discord.</li>
+        <li>(2.12) Interaction between your own characters, such as transferring money between them, is strictly prohibited and considered a bannable offense.</li>
+        <li>(2.13) For issues with another player, submit a report via the "Report A Player" form, including evidence for staff to review.</li>
+    </ul>
+
+    <h2>3. Rules of Roleplay</h2>
+    <ul>
+        <li>(3.1) Partaking in any heists 30 minutes before or after a scheduled restart is not allowed. Unscheduled restarts are exempt, but if caught after an announcement, punishment may apply.</li>
+        <li>(3.2) Ensure your character name is reasonable and realistic. Violations will require you to choose a new name.</li>
+        <li>(3.3) No criminal activity is allowed inside any hospital. This rule is void if someone runs into a hospital as a safe haven while already in a roleplay situation.</li>
+        <li>(3.4) If EMS is on duty and you fail to use their service by bringing someone to a hospital yourself, you are removing EMS roleplay. Exceptions apply if there is no response from EMS after 3 minutes.</li>
+        <li>(3.5) If EMS places your character in the ICU, they must remain there for a minimum of 4 hours to a maximum of 24 hours. Clearance to leave must be given by qualified EMS. Playing the same character without clearance is considered Fail RP and may result in penalties.</li>
+        <li>(3.6) Missions such as cocaine runs, oxy runs, or gun-running are restricted to members of whitelisted gangs.</li>
+        <li>(3.7) Stealing emergency vehicles is prohibited unless obtained via a legitimate roleplay scenario. Holding up EMS or PD employees to take vehicles without roleplay is not allowed.</li>
+        <li>(3.8) If you encounter internet or power connection problems during a scene, immediately report it in the #Game Crash channel. Upon restoration, explain the issue in OOC and resume your last position in the scene.</li>
+        <li>(3.9) Mentioning server rules during an RP situation (e.g., "You’re not doing it right" or "I know every rule, don’t judge me") will result in a kick or ban.</li>
+    </ul>
+    
+    <h2>4. Metagaming</h2>
+    <ul>
+        <li>(4.1) Metagaming is the act of using information obtained from outside of Roleplay and influencing Roleplay inside the game and is not permitted.</li>
+        <li>(4.1.1) Using Discord or any external communication platform during RP, or if an RP situation starts from Discord or another communication site, can result in a ban from the server.</li>
+        <li>(4.2) You cannot identify someone by looking at their ID. The ID number can only be used when reporting someone. Identifying someone using their ID will result in a ban.</li>
+        <li>(4.3) If your communication devices (mobile, radio) have been removed from you, you must not use them to communicate.</li>
+        <li>(4.4) Watching someone’s stream and using that information in-game is considered Metagaming. Doing so can result in a ban from the server.</li>
+    </ul>
+
+    <h2>5. New Life Rule</h2>
+    <ul>
+        <li>(5.1) When a new life rule begins:
+            <ul>
+                <li>You are sentenced to death.</li>
+                <li>You must re-spawn.</li>
+            </ul>
+        </li>
+        <li>(5.2) The NLR does not apply to the following:
+            <ul>
+                <li>Your character is obviously a victim of VDM.</li>
+                <li>Your character is clearly a victim of RDM.</li>
+                <li>If you are down (injured/unconscious) and waiting for resuscitation.</li>
+                <li>You have been disconnected from the game.</li>
+            </ul>
+        </li>
+        <li>(5.3) When you are revived:
+            <ul>
+                <li>In a shootout situation, when you are "dead," you forget the last 15 minutes of Roleplay.</li>
+                <li>You are not allowed to remember how you died or return to the scene of death based on the knowledge of that death.</li>
+                <li>You can remember everything before the death but cannot ruin medical roleplay while injured. You must roleplay as the injured person.</li>
+            </ul>
+        </li>
+        <li>(5.4) When you are re-spawned/airlifted:
+            <ul>
+                <li>If you are airlifted to the hospital (Pillbox), you will suffer memory loss about the events leading to your injury.</li>
+                <li>You cannot remember what happened to you or reveal/share any information regarding it.</li>
+            </ul>
+        </li>
+        <li>(5.5) When you are downed:
+            <ul>
+                <li>You cannot communicate with anyone while unconscious and cannot provide information to teammates.</li>
+                <li>If injured by a gun or other deadly weapon, you cannot speak, but in complex situations, you may pretend to speak as an injured person.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>6. Criminal Roleplay</h2>
+    <ul>
+        <li>(6.1) You must play a high-quality role when taking a hostage.</li>
+        <li>(6.2) Your friends or gang members are not allowed to use the hostage. The hostage must be someone you don't know or have no idea what you're planning.</li>
+        <li>(6.3) Using a phone call to alert the police or make demands is not allowed. For example, you cannot demand Rs 50,000 while holding someone hostage.</li>
+        <li>(6.3.1) If you want to take someone hostage, you must have a proper RP background. If you take someone hostage for robbery, you cannot loot them. For other situations, you may only take what's critically important.</li>
+        <li>(6.4) If interrupted by the police, you must surrender and not store your items before doing so. If you try to store items, it will be a Fail RP. If your game crashes, report it on the #Game Crash channel. Otherwise, you will be reported for "Combat Logging." In a bank robbery, you cannot transfer or deposit money until the situation ends.</li>
+        <li>(6.5) The roleplay doesn't start when the police turn on their siren lights to stop you. Firing at police to avoid being stopped is considered RDM.</li>
+        <li>(6.6) Execution must have:
+            <ul>
+                <li>High-quality roleplay.</li>
+                <li>A very good reason for it to happen.</li>
+            </ul>
+        </li>
+        <li>(6.7) Criminal roleplay is limited to no more than 4 people in your group. If you exceed this number, you will receive a kick and a warning. This applies to:
+            <ul>
+                <li>Holding a player or NPC.</li>
+                <li>Farming, processing, or selling illicit substances.</li>
+                <li>Robbing or taking someone hostage.</li>
+            </ul>
+        </li>
+        <li>(6.7.1) Exceptions for prison transports: Up to six offenders can participate in prison transport.</li>
+        <li>(6.8) You may not camp at locations intended to rob players, including diving spots, chop shops, gun locations, garbage spots, and cocaine locations.</li>
+        <li>(6.9) Stealing from someone when the police arrest them is prohibited.</li>
+    </ul>
+
+    <h2>7. Police Rules</h2>
+    <ul>
+        <li>(7.1) Tasers (non-lethal force) should be used unless there is a direct danger to surrounding officers or civilians or otherwise instructed by a high-ranking officer. Lethal force can only be used to terminate the danger.</li>
+        <li>(7.2) When going off-duty as an officer, you must dispose of any equipment and vehicles that you obtained from the police department. You cannot take equipment from the PD while off-duty.</li>
+        <li>(7.3) Police corruption is allowed as long as there is a story behind it. Using the role to benefit friends or gangs from another character is not allowed.</li>
+        <li>(7.4) Detectives are not allowed to work on cases involving their other characters. This is to avoid metagaming.</li>
+        <li>(7.5) Police must value the lives of their own officers and any civilians involved in a criminal situation.</li>
+        <li>(7.6) Police cannot take items from the evidence locker to profit from them.</li>
+        <li>(7.7) Negotiators cannot be taken as hostages.</li>
+        <li>(7.8) If criminals are using pistols, police must use pistols too in a code red situation. If criminals use SMGs, rifles, etc., police can use their weapons according to the situation. Exception: In a Jewelry Robbery Heist, class 2 weapons are required, so police may use SMGs/shotguns.</li>
+        <li>(7.9) After a shootout in a cops vs criminals situation, FIB/Officers can investigate the scene (following NLR 5.1, 5.2), even if the cops lose the fight. This allows for stricter consequences for scenarios leading to a player's death. PD will allow investigative roleplay and issue more warrants for criminals. Criminals must be mindful of shooting cops.</li>
+    </ul>
+
+    <h2>8. EMS Rules</h2>
+    <ul>
+        <li>(8.1) EMS shall consult the nearest officer when attending a crime scene. If no officer is nearby, they may call them or proceed with a final caution.</li>
+        <li>(8.2) When going off-duty as a medic, you must dispose of any equipment and vehicles from the hospital.</li>
+        <li>(8.3) EMS should not abuse their powers as medical personnel to assist friends.</li>
+        <li>(8.4) EMS is not responsible for the recovery of individuals killed in critical situations (gunfights, stab wounds, etc.) while on duty.</li>
+        <li>(8.5) EMS can revive all downed or injured individuals involved in minor situations (small vehicle collisions, fistfights, etc.).</li>
+        <li>(8.6) EMS must always have an effective microphone. Refer to 3.5 and follow ICU RP rules.</li>
+    </ul>
+    <h3>Safe Zone</h3>
+    <ul>
+        <li>1. Police Department (PD)</li>
+        <li>2. All Medical Centers (Medical Department)</li>
+        <li>3. All business areas (Inside the property only)</li>
+    </ul>
+    <p>You can never use a gun or any kind of weapon within 100 meters (inside/outside) of the mentioned Safe Zone. Failure to comply may result in a kick/ban from the server.</p>
+    <h3>Red Zone</h3>
+    <ul>
+        <li>1. Cocaine Field</li>
+        <li>2. Weed Field</li>
+        <li>3. Gun Heist</li>
+        <li>4. Cocaine Processing</li>
+        <li>5. Weed Processing</li>
+    </ul>
+    <p>You must not camp or fight a person from the mentioned Red Zone areas. This will be considered Fail-RP. Exceptions are made for Detective/FIB roles, who may raid these locations with a valid RP background.</p>
+    </div>
+</body>
+</html>
