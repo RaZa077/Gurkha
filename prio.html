@@ -3,29 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priority Pricing</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Legacy Roleplay Gurkha</title>
+ <style>
+    /* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: url('/img/background.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh; /* Ensure full page coverage */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    background: gold;
+    color: black;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: gold;
+    margin: 10px 0;
+}
+
+.header h3 {
+    font-size: 32px;
+    color: gold;
+    margin: 10px 0;
+}
+
+/* About Section Styles - Adjusted to 80% width and Left Aligning Text */
+.about-section {
+    text-align: left; /* Align text to the left */
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%; /* Set the box width to 80% */
+    max-width: 1100px; /* Max width to ensure responsiveness */
+    background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slight shadow for visibility */
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: cyan;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.about-content span {
+    font-style: italic;
+    color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-section {
+        width: 90%; /* Make box slightly smaller on mobile */
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .about-section h2 {
+        font-size: 22px;
+    }
+}
+
+ </style>
 </head>
 <body>
+  <!-- Navbar -->
   <div class="navbar">
     <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/server_rule.html">Server Rules</a></li>
-      <li><a href="prio.html" class="active">Priority Details</a></li>
+      <li><a href="/index.html" >Home</a></li>
+      <li><a href="/server_rule.html" >Server Rules</a></li>
+      <li><a href="/prio.html" class="active">Priority Details</a></li>
     </ul>
   </div>
-  <div class="header">
-    <img src="/img/logo.png" alt="Logo" class="logo">
-  </div>
-  <div class="content">
-    <h2>Priority Price</h2>
-    <div class="priority-price">
-      <p>Respected Tier: <span>9.99 USD (NPR 999/-)</span></p>
-      <p>Heroic Tier: <span>24.99 USD (NPR 2,999/-)</span></p>
-      <p>Legendary Tier: <span>49.99 USD (NPR 5,999/-)</span></p>
-      <p>God Tier: <span>79.99 USD (NPR 9,999/-)</span></p>
+
+  <!-- rules Section -->
+  <div class="about-section">
+    <header>
+        <h1>Legacy Roleplay Gurkha - Official Rules</h1>
+    </header>
+    <div class="container">
+        <p><strong>If you want to buy Prio and support the server, please create a ticket <a href="https://discord.com/channels/930021412121489408/1304908451889025044" target="_blank">HERE</a>, and we'll assist you!</strong></p>
+    
+    <h2>Respected Tier 9.99 USD (NPR 999/-)</h2>
+    <ul>
+        <li>Your name/Steam identifier will turn orange on the scoreboard.</li>
+        <li>Receive an exclusive support role on Discord.</li>
+        <li>Access to the <code>/watermark</code> command.</li>
+        <li>Access to the <code>/off-set</code> command.</li>
+        <li>Get 8 character slots instead of 4 (characters created in the extra slots will remain available even after your pledge expires).</li>
+        <li>Low priority in the queue (this allows you to bypass all players without any queue, which is still usually quite helpful).</li>
+        <li>Access to purchase <a href="https://edm.twoot.org/view/respected?expires=&s=" target="_blank">exclusive vehicles</a> under this tier.</li>
+    </ul>
+
+    <h2>Heroic Tier 24.99 USD (NPR 2,999/-)</h2>
+    <ul>
+        <li>Your name/Steam identifier will turn blue on the scoreboard.</li>
+        <li>Receive an exclusive support role on Discord.</li>
+        <li>Access to the <code>/watermark</code> command.</li>
+        <li>Access to the <code>/off-set</code> command.</li>
+        <li>Get 8 character slots instead of 4 (characters created in the extra slots will remain available even after your pledge expires).</li>
+        <li>Medium priority in the queue (this allows you to bypass players without any active priority and players with lower-tier priority).</li>
+        <li>Access to purchase <a href="https://edm.twoot.org/view/heroic?expires=&s=" target="_blank">exclusive vehicles</a> under this tier and the lower tiers.</li>
+    </ul>
+    <h2>Legendary Tier 49.99 USD (NPR 5,999/-)</h2>
+    <ul>
+        <li>Your name/Steam identifier will turn yellow on the scoreboard.</li>
+        <li>Receive an exclusive support role on Discord.</li>
+        <li>Access to the <code>/watermark</code> command.</li>
+        <li>Access to the <code>/off-set</code> command.</li>
+        <li>Get 8 character slots instead of 4 (characters created in the extra slots will remain available even after your pledge expires).</li>
+        <li>High priority in the queue (this allows you to bypass players without active priority and those with lower-tier priority).</li>
+        <li>Access to purchase <a href="https://edm.twoot.org/view/legendary?expires=&s=" target="_blank">exclusive vehicles</a> under this tier and from the lower tiers.</li>
+        <li>1 free custom license plate for your vehicles.</li>
+    </ul>
+
+    <h2>God Tier 79.99 USD (NPR 9,999/-)</h2>
+    <ul>
+        <li>Your name/Steam identifier will turn purple on the scoreboard.</li>
+        <li>Receive an exclusive support role on Discord.</li>
+        <li>Access to the <code>/watermark</code> command.</li>
+        <li>Access to the <code>/off-set</code> command.</li>
+        <li>Access to the <code>/buddy_pass</code> command (bring a friend into the server even if they’re in the queue).</li>
+        <li>Get 8 character slots instead of 4 (characters created in the extra slots will remain available even after your pledge expires).</li>
+        <li>Instant access to the server with a reserved slot for you.</li>
+        <li>Ability to import 1 custom car of your choice from the catalog (regardless of shuffle).</li>
+        <li>Access to purchase <a href="https://edm.twoot.org/view/special?expires=&s=" target="_blank">exclusive vehicles</a> from all lower tiers.</li>
+        <li>2 free custom license plates for your vehicles.</li>
+    </ul>
+
+    <h3>Packages</h3>
+    <ul>
+        <li>For <strong>Custom Number Plate on Your Vehicle</strong> - <strong>5.99 USD</strong> (NPR 800/-)</li>
+        <li>For <strong>Custom Phone Number on Your Character</strong> - <strong>5.99 USD</strong> (NPR 800/-)</li>
+    </ul>
+
+    <h3>OP Points Pricing</h3>
+    <ul>
+        <li><strong>10 points</strong> - <del>4.99 USD</del> 2.99 USD</li>
+        <li><strong>25 points</strong> - <del>11.99 USD</del> 7.99 USD</li>
+        <li><strong>50 points</strong> - <del>22.99 USD</del> 12.99 USD</li>
+        <li><strong>100 points</strong> - <del>42.99 USD</del> 24.99 USD</li>
+        <li><strong>250 points</strong> - <del>99.99 USD</del> 59.99 USD</li>
+        <li><strong>500 points</strong> - <del>179.99 USD</del> 99.99 USD</li>
+        <li><strong>750 points</strong> - <del>249.94 USD</del> 179.99 USD</li>
+    </ul>
     </div>
-    <h2>Package Price</h2>
-  </div>
 </body>
 </html>
